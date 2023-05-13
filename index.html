@@ -14,25 +14,138 @@
 </head>
 
 <body>
+    <div class="formBox">
+        <div class="box next activeBlock" id="register">
+            <h1 style="text-align: center;">Регистрация</h1>
+            <form action="">
+                <input type="text" id="registerUser" placeholder="имя пользователя">
+                <input type="text" id="registerGmail" placeholder="ваш gmail">
+                <input type="password" id="registerPassword" placeholder="введите пароль">
+                <div class="check" id="check1">
+                    <div class="chekBlock">
+
+                    </div>
+                </div>
+                <button id="dataBes">зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="box reg" id="entrance">
+            <h1 style="text-align: center;">Вход</h1>
+            <form action="">
+                <input type="text" id="entranceUser" placeholder="имя пользователя">
+                <input type="password" id="entrancePassword" placeholder="введите пароль">
+                <div class="check" id="check2">
+                    <div class="chekBlock">
+
+                    </div>
+                </div>
+                <button id="dataBes">зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    <div class="users">
+        <div class="box">
+            <span class="material-icons" id="userClose">
+                close
+            </span>
+            <h1>Здравствуйте <span id="names1"></span></h1>
+            <h1>хотите изменить данные?</h1>
+            <input type="text" class="myusers">
+            <input type="text" class="mygmail">
+            <input type="text" class="mypassword">
+            <button id="changes">изменить</button>
+        </div>
+    </div>
     <header>
         <nav>
             <ul>
-                <li><img src="https://static.lamborghinistore.com/static/version1681309051023/img/logo.svg" alt=""></li>
+                <li><img src="https://i.ibb.co/hMs30HT/Whats-App-Image-2023-05-08-at-10-19-18.jpg" width="80px" alt="">
+                </li>
             </ul>
-            <ul>
+            <ul class="burger">
                 <li><a href="#">все машины</a></li>
-                <li id="basket"><a href="#">карзина</a></li>
+                <li id="basket"><a href="#">корзина</a></li>
                 <li><a href="#">цвета</a></li>
+                <li class="turnedInNot"><a href="#">избраные</a></li>
             </ul>
-            <ul>
+            <ul class="burger">
                 <li>
                     <span class="material-icons" id="search">
                         search
                     </span>
                 </li>
+                <li>
+                    <a href="https://t.me/bolalar_dunyosi_mashinki_uz"><img src="img/bxl_telegram.svg" width="30px"
+                            alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/serinity_toys/"><img src="img/ph_instagram-logo-fill.svg"
+                            width="30px" alt=""></a>
+                </li>
+                <li class="thisUsers">
+                    <span class="material-icons">
+                        account_circle
+                    </span>
+                </li>
             </ul>
+            <ul class="burgerMenu">
+                <li>
+                    <span class="material-icons" id="burgerMenu">
+                        menu
+                    </span>
+                </li>
+            </ul>
+
         </nav>
     </header>
+    <ul class="burgerMenuLeft">
+        <li><a href="#"><img src="https://i.ibb.co/hMs30HT/Whats-App-Image-2023-05-08-at-10-19-18.jpg" width="80px"
+                    alt=""> handmede cars models</a></li>
+        <hr>
+        <li class="shoppingBag">
+            <a href="#">
+
+                <span class="material-icons">
+                    shopping_bag
+                </span>
+                карзина
+            </a>
+        </li>
+        <li class="turnedInNot1">
+            <a href="#">
+
+                <span class="material-icons">
+                    turned_in_not
+                </span>
+                избраные
+            </a>
+        </li>
+        <li class="search1">
+            <a href="#">
+
+                <span class="material-icons">
+                    search
+                </span>
+                поиск
+            </a>
+        </li>
+        <li class="accountCircle">
+            <a href="#">
+                <span class="material-icons">
+                    account_circle
+                </span>
+                аккаунт
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/bolalar_dunyosi_mashinki_uz"><img src="img/bxl_telegram.svg" width="30px" alt="">
+                Telegram</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/serinity_toys/"><img src="img/ph_instagram-logo-fill.svg" width="30px"
+                    alt="">Instagram</a>
+        </li>
+    </ul>
     <main>
         <div class="modal">
             <div class="cont">
@@ -48,6 +161,61 @@
                 </div>
                 <div class="box" id="searchBox">
 
+                </div>
+            </div>
+        </div>
+        <div class="modalBascket">
+            <div class="cont">
+
+                <div class="box" id="bascketBox">
+
+                </div>
+            </div>
+        </div>
+        <div class="oupshenmodul">
+            <div class="box">
+
+                <div class="elem">
+                    <span class="material-icons close" id="close">
+                        close
+                    </span>
+                    <div class="img">
+                        <img src="https://static.lamborghinistore.com/rx/500x,ofmt_webp/media/catalog/product/1/4/14516rey053143_01_bis.jpg"
+                            alt="" id="img">
+                    </div>
+                </div>
+                <div class="elem">
+                    <div class="bloc">
+                        <div class="blocElem">
+                            <h2 id="names">name</h2>
+                            <span><span id="carpriys"></span>$</span>
+                        </div>
+                        <div class="blocElem">
+                            <div class="num">
+                                <div class="top">
+                                    <span class="material-icons" id="plus">
+                                        expand_less
+                                    </span>
+                                </div>
+                                <p id="text">1</p>
+                                <div class="bottom">
+                                    <span class="material-icons" id="minus">
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p id="carComent">coment</p>
+                    </div>
+
+                    <button class="shop">
+                        в карзину
+                        <span class="material-icons">
+                            shopping_bag
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -81,6 +249,45 @@
                 </div>
             </div>
         </section>
+        <section class="googleCard">
+            <div class="cont">
+                <div class="box">
+                    <div class="block">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3592611758486!2d37.59367357607966!3d55.75226109203381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4cec16c891%3A0xea54508a688e4eb5!2z0JTQtdGC0YHQutC40Lkg0LzQuNGA!5e0!3m2!1sru!2s!4v1683979868966!5m2!1sru!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="block">
+                        <h2>
+                            о нас
+                        </h2>
+                        <p>
+                            Добро пожаловать в наш магазин игрушечных машинок, где вы найдете самые лучшие игрушки для
+                            вашего маленького автомана! Мы предлагаем огромный выбор игрушечных машинок от лучших
+                            производителей, которые поразят вас своим качеством и оригинальным дизайном.
+
+                            Наш магазин - идеальное место для всех, кто любит скорость и адреналин! У нас вы найдете все
+                            виды игрушечных машинок - от обычных машинок до гоночных автомобилей, мотоциклов, вертолетов
+                            и многое другое. Мы предлагаем игрушки для детей разных возрастов - от маленьких машинок для
+                            самых маленьких до наборов для сборки и управления на расстоянии для более старших детей.
+
+                            В нашем магазине вы найдете машинки от лучших мировых брендов, таких как Hot Wheels, Maisto,
+                            Bburago, Siku, Welly и другие. Мы гарантируем высокое качество наших игрушек, а также
+                            уникальный дизайн, который не оставит равнодушным ни одного маленького автомана.
+
+                            У нас вы также найдете большой выбор аксессуаров для игрушечных машинок, таких как треки,
+                            гаражи, запчасти, дорожные знаки и многое другое. Мы готовы помочь вам создать самую крутую
+                            гоночную трассу, которую вы только можете представить!
+
+                            Посетите наш магазин игрушечных машинок и подарите вашему ребенку незабываемые моменты
+                            радости и удовольствия!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section class="content">
             <div class="cont">
                 <div class="box" id="thiscontents">
@@ -94,7 +301,8 @@
             <div class="box">
                 <div class="elem">
                     <div class="logo">
-                        <img src="https://static.lamborghinistore.com/static/version1681309051023/img/logo.svg" alt="">
+                        <img src="https://i.ibb.co/hMs30HT/Whats-App-Image-2023-05-08-at-10-19-18.jpg" width="80px"
+                            alt="">
                     </div>
                     <p>нашь номер</p>
                     <p>+7(825)729-08-56</p>
@@ -109,6 +317,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
