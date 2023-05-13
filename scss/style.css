@@ -861,6 +861,9 @@ body footer .box .elem .top span {
     border: 0 !important;
     flex-wrap: wrap;
   }
+  .googleCard .box .block {
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .burger {
