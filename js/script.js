@@ -730,8 +730,8 @@ search.onclick = () => {
   if (bol == false) {
     search.innerHTML = 'close'
     bol = true
-    
-    
+
+
 
   } else {
     search.innerHTML = 'search'
@@ -739,7 +739,7 @@ search.onclick = () => {
 
     searchBox.innerHTML = ''
   }
-  for(let i of cars){
+  for (let i of cars) {
     contents(i.img, i.name, i.price, i.comment, searchBox, i.id)
   }
   liyck()
@@ -926,7 +926,7 @@ dataBes[0].onclick = (event) => {
 }
 // console.log(dataBes[1]);
 dataBes[1].onclick = (event) => {
-  
+
   event.preventDefault()
   JSON.parse(localStorage.getItem('user')).forEach((i) => {
     if (i.name == entranceUser.value && i.password == entrancePassword.value) {
@@ -976,6 +976,18 @@ changes.onclick = () => {
 }
 
 let accountCircle = doc.querySelector('.accountCircle')
-accountCircle.onclick = () =>{
+accountCircle.onclick = () => {
   thisUsers.click()
+}
+
+let scrollcar = doc.querySelector("#scrollcar")
+let cars_cont = doc.querySelector("#thiscontents")
+scrollcar.onclick = (event) => {
+  scroll(0, cars_cont.offsetTop)
+}
+let lokationcolor = doc.querySelector('#color')
+let colorKars = doc.querySelector("#colorKars")
+colorKars.onclick=(event)=>{
+  event.preventDefault()
+  scroll(0, lokationcolor.offsetTop)
 }

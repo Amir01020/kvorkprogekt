@@ -5,6 +5,7 @@
     &::-webkit-scrollbar {
         width: 0px;
     }
+    scroll-behavior: smooth;
 }
 
 li {
@@ -813,17 +814,26 @@ body {
                 border: 2px solid orange;
                 border-radius: 20px;
                 padding:20px;
-                @include fff(flex, center,start);
+                @include fff(flex, center,center);
+                
                 gap: 20px ;
-                h2{
-                    font-size: 40px;
-                    text-transform: uppercase;
-                    color: orange;
+                .block{
+                    width: 50%;
+                    iframe{
+                        width: 100%;
+                    }
+                    h2{
+                        font-size: 40px;
+                        text-transform: uppercase;
+                        color: orange;
+                    }
+                    p{
+                        margin-top: 10px;
+                        opacity: 0.7;
+                    }
+                    
                 }
-                p{
-                    margin-top: 10px;
-                    opacity: 0.7;
-                }
+                
 
             }
         }
@@ -986,7 +996,19 @@ body {
         }
     }
 }
+@media (max-width:1200px){
+    .googleCard{
+        .box{
+            border: 0 !important;
+            
+            flex-wrap: wrap;
+            .block{
+            }
+            
 
+        }
+    }
+}
 @media(max-width:768px) {
 
     .burger {

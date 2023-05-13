@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
   width: 0px;
@@ -701,15 +702,21 @@ body main .googleCard .box {
   padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 20px;
 }
-body main .googleCard .box h2 {
+body main .googleCard .box .block {
+  width: 50%;
+}
+body main .googleCard .box .block iframe {
+  width: 100%;
+}
+body main .googleCard .box .block h2 {
   font-size: 40px;
   text-transform: uppercase;
   color: orange;
 }
-body main .googleCard .box p {
+body main .googleCard .box .block p {
   margin-top: 10px;
   opacity: 0.7;
 }
@@ -849,6 +856,12 @@ body footer .box .elem .top span {
   font-size: 40px;
 }
 
+@media (max-width: 1200px) {
+  .googleCard .box {
+    border: 0 !important;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   .burger {
     display: none !important;
