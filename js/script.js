@@ -398,6 +398,17 @@ let cars = [
     id: '11'
   }
 ];
+cars.forEach((i)=>{
+  if (+i.price < 1000) {
+    i.price = +i.price+1000
+  }else if (+i.price > 5000) {
+    let random1 = Math.ceil(Math.random() * 4)+''
+    let random2 = Math.floor(Math.random() * 9)+''
+    let random3 = Math.floor(Math.random() * 9)+''
+    let random4 = Math.floor(Math.random() * 9)+''
+    i.price = random1+random2+random3+random4
+  }
+})
 let arrSliyd = [
   {
     name: 'Ford Mustang GT',
