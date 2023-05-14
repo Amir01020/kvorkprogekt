@@ -580,15 +580,15 @@ function oupshen() {
     i.onclick = () => {
       console.log(names);
       names.innerHTML = cars[i.dataset.id].name
-      console.log(i.dataset.id);
+      console.log();
       oupshenmodul.style.display = 'flex'
       text.innerHTML = '1'
       carComent.innerHTML = cars[i.dataset.id].comment
       imeges.src = cars[i.dataset.id].img
       shop1.dataset.id = i.dataset.id
-      pricees(cars[i.dataset.id].price, plus, minus, carprice)
-
-      carpriys.textContent = cars[i.dataset.id].price
+      pricees(cars[i.dataset.id].price, plus, minus, carpriys)
+      console.log(cars[i.dataset.id].price);
+      carpriys.innerHTML = cars[i.dataset.id].price
 
 
 
@@ -792,6 +792,7 @@ function pricees(dolar, btn1, btn2, htm) {
   let n = 1
 
   btn1.onclick = () => {
+    console.log(htm);
     numbers += dolar
     htm.innerHTML = numbers
     n += 1

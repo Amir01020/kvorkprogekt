@@ -206,11 +206,16 @@ body header nav ul li a {
 }
 body header nav ul:nth-child(2) li:hover {
   color: orange;
-  text-decoration: underline;
+  text-decoration: none;
   transition: 0.3s;
 }
 body header nav ul:nth-child(2) li:hover a {
   color: orange;
+}
+body .comentSlid h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(223, 145, 0);
 }
 body .burgerMenuLeft {
   position: fixed;
@@ -253,7 +258,7 @@ body .burgerMenuLeft li a span {
 }
 body .burgerMenuLeft li a:hover {
   color: orange;
-  text-decoration: underline;
+  text-decoration: none;
 }
 body .burgerMenuLeftAcktiv {
   transform: translateX(0);
@@ -263,6 +268,12 @@ body main {
 }
 body main .sliyd .box .mySwiper {
   width: 100%;
+}
+body main .sliyd .box .mySwiper .swiper-button-next {
+  color: orange;
+}
+body main .sliyd .box .mySwiper .swiper-button-prev {
+  color: orange;
 }
 body main .sliyd .box .mySwiper .swipcont {
   width: 100%;
@@ -277,6 +288,12 @@ body main .sliyd .box .mySwiper .swipcont .sliyds {
 }
 body main .sliyd .box .mySwiper .swipcont .sliyds img {
   width: 30%;
+}
+body main .card .cont {
+  padding: 100px;
+}
+body main .card iframe {
+  width: 100%;
 }
 body main .oupshenmodul {
   position: fixed;
