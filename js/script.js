@@ -104,7 +104,7 @@ let cars = [
   }, {
     name: 'LAMBORGHINI HURACÁN EVO',
     color: 'red',
-    img: 'https://static.lamborghinistore.com/rx/500x,ofmt_webp/media/catalog/product/9/0/9012890REO036143XX_01_1.jpg',
+    img: 'https://images.satu.kz/55989926_w640_h640_igrushka-model-mashiny.jpg',
     comment: 'Huracán EVO — это эволюция модели с самым успешным для марки Lamborghini двигателем V10. Суперкар стал результатом совершенствования и соединения лучших характеристик и элементов с повышенной производительностью, а также квинтэссенцией новых решений в области динамики и дизайна.',
     price: '203',
     exclusive: '',
