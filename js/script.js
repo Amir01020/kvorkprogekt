@@ -916,8 +916,9 @@ let thisUsers = doc.querySelector('.thisUsers')
 let formBox = doc.querySelector('.formBox')
 let dataBes = doc.querySelectorAll('#dataBes')
 dataBes[0].onclick = (event) => {
+  event.preventDefault()
   if (registerUser.value !== '' && registerGmail.value !== '' && registerPassword.value !== '') {
-    event.preventDefault()
+    
     users.name = registerUser.value
     thisUsers.dataset.name = registerUser.value
     thisUsers.dataset.gmail = registerGmail.value
