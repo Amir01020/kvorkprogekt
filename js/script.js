@@ -547,7 +547,7 @@ function contents(imeges, name, price, comment, box, id) {
   let p = doc.createElement('p')
   p.innerHTML = comment
   let span = doc.createElement('span')
-  span = `${price} $`
+  span = `${price} ₽`
   let icon = doc.createElement('span')
   icon.classList.add('material-icons')
   icon.innerHTML = 'shopping_bag'
