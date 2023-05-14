@@ -399,6 +399,8 @@ let cars = [
   }
 ];
 cars.forEach((i)=>{
+  i.price = i.price+''
+  i.price = i.price.replace(/,/g, "")
   if (+i.price < 1000) {
     i.price = +i.price+1000
   }else if (+i.price > 5000) {
